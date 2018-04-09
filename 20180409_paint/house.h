@@ -5,3 +5,13 @@
 
 using namespace std;
 using namespace cv;
+
+class house {
+public:
+	house();
+	void draw(Mat bac);
+private:
+	const int RoomLength = 100;
+	Rect room;
+	Point A; Point B; Point C;//三角形屋顶的三个顶点
+};

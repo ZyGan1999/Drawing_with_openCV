@@ -46,8 +46,8 @@ void person::draw(Mat bac) {
 
 	const Point* Lpt[1] = { Lpoints[0] };
 	int Lnpt[1] = { 4 };
-	polylines(bac, Lpt, Lnpt, 1, 1, Scalar(250, 0, 0));
-	fillPoly(bac, Lpt, Lnpt, 1, Scalar(250, 0, 0), 8);
+	polylines(bac, Lpt, Lnpt, 1, 1, Scalar(255,255,255));
+	fillPoly(bac, Lpt, Lnpt, 1, Scalar(255,255,255), 8);
 
 	Point Rpoints[1][20];
 	Rpoints[0][0] = LB2;

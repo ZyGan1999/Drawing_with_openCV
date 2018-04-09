@@ -13,7 +13,7 @@ public:
 
 private:
 	Point HeadCenter;
-	const int headsize = 50;
+	const int headsize = 10;
 	Rect body;
 	Rect LeftLeg;
 	Rect RightLeg;
