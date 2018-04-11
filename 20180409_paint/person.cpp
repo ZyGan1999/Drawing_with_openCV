@@ -32,10 +32,10 @@ person::person() {
 }
 
 void person::draw(Mat bac) {
-	circle(bac, HeadCenter, headsize, Scalar(255, 255, 255), -1, 8, 0);//画头
-	rectangle(bac, body, Scalar(255, 255, 255), -1, 8, 0);//画身体
-	rectangle(bac, LeftLeg, Scalar(255, 255, 255), -1, 8, 0);//画左腿
-	rectangle(bac, RightLeg, Scalar(255, 255, 255), -1, 8, 0);//画右腿
+	circle(bac, HeadCenter, headsize, Scalar(32,165,218), -1, 8, 0);//画头
+	rectangle(bac, body, Scalar(0, 0, 250), -1, 8, 0);//画身体
+	rectangle(bac, LeftLeg, Scalar(250, 0, 0), -1, 8, 0);//画左腿
+	rectangle(bac, RightLeg, Scalar(250, 0, 0), -1, 8, 0);//画右腿
 
 	/*以下是构建折线并填充以画出平行四边形作为左右手臂*/
 	Point Lpoints[1][20];
@@ -46,8 +46,8 @@ void person::draw(Mat bac) {
 
 	const Point* Lpt[1] = { Lpoints[0] };
 	int Lnpt[1] = { 4 };
-	polylines(bac, Lpt, Lnpt, 1, 1, Scalar(255,255,255));
-	fillPoly(bac, Lpt, Lnpt, 1, Scalar(255,255,255), 8);
+	polylines(bac, Lpt, Lnpt, 1, 1, Scalar(0,0,250));
+	fillPoly(bac, Lpt, Lnpt, 1, Scalar(0,0,250), 8);
 
 	Point Rpoints[1][20];
 	Rpoints[0][0] = LB2;
@@ -57,6 +57,6 @@ void person::draw(Mat bac) {
 
 	const Point* Rpt[1] = { Rpoints[0] };
 	int Rnpt[1] = { 4 };
-	polylines(bac, Rpt, Rnpt, 1, 1, Scalar(250, 0, 0));
-	fillPoly(bac, Rpt, Rnpt, 1, Scalar(250, 0, 0), 8);
+	polylines(bac, Rpt, Rnpt, 1, 1, Scalar(0, 0, 250));
+	fillPoly(bac, Rpt, Rnpt, 1, Scalar(0, 0, 250), 8);
 }

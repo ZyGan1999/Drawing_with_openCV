@@ -3,7 +3,7 @@
 
 int main()
 {
-	Mat background(1000, 1000, CV_8U);
+	Mat background(800, 1000, CV_8UC3);
 	person p;
 	house h;
 	p.draw(background);

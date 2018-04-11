@@ -14,4 +14,5 @@ private:
 	const int RoomLength = 150;
 	Rect room;
 	Point A; Point B; Point C;//三角形屋顶的三个顶点
+	Rect window;//窗户
 };
