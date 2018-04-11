@@ -2,8 +2,8 @@
 
 person::person() {
 	/*以头半径为标准构建所有图像的坐标和参数*/
-	HeadCenter.x = 200;
-	HeadCenter.y = 200;
+	HeadCenter.x = 400;
+	HeadCenter.y = 600;
 
 	body.x = HeadCenter.x - 2 * headsize;
 	body.y = HeadCenter.y + headsize;

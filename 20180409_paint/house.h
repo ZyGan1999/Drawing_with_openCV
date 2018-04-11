@@ -11,7 +11,7 @@ public:
 	house();
 	void draw(Mat bac);
 private:
-	const int RoomLength = 100;
+	const int RoomLength = 150;
 	Rect room;
 	Point A; Point B; Point C;//三角形屋顶的三个顶点
 };

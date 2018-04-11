@@ -1,7 +1,7 @@
 #include"house.h"
 
 house::house() {
-	room.x = 600; room.y = 600;
+	room.x = 600; room.y = 550;
 	room.height = RoomLength;
 	room.width = RoomLength;
 
